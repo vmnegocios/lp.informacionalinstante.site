@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página</title>
+	<link rel="preload" href="https://scripts.converteai.net/7ee76c7b-b701-481f-b973-2b478faae041/players/6782e7560f28aac6bc763eb5/player.js" as="script">
+	<link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+	<link rel="preload" href="https://images.converteai.net/7ee76c7b-b701-481f-b973-2b478faae041/players/6782e7560f28aac6bc763eb5/thumbnail.jpg" as="image">
+	<link rel="preload" href="https://cdn.converteai.net/7ee76c7b-b701-481f-b973-2b478faae041/6782e59a8afa4101597345f2/main.m3u8" as="fetch">
+	<link rel="dns-prefetch" href="https://cdn.converteai.net">
+	<link rel="dns-prefetch" href="https://scripts.converteai.net">
+	<link rel="dns-prefetch" href="https://images.converteai.net">
+	<link rel="dns-prefetch" href="https://api.vturb.com.br">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        .top-bar {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .video-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .sound-notice {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            font-size: 16px;
+            margin-bottom: 40px; /* Espacio adicional entre la nota de sonido y los comentarios */
+        }
+        .sound-notice i {
+            margin-right: 10px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: gray;
+        }
+    </style>
+    <script>
+        function getCurrentDate() {
+            const today = new Date();
+            const day = String(today.getDate()).padStart(2, '0');
+            const month = String(today.getMonth() + 1).padStart(2, '0');
+            const year = today.getFullYear();
+            return `${day}/${month}/${year}`;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('dynamic-date').textContent = getCurrentDate();
+        });
+    </script>
+</head>
+<body>
+
+    <!-- SESIÓN 1 -->
+    <div class="top-bar">
+        Esta presentación estará disponible solo hasta el <span id="dynamic-date" class="underline-highlight"></span>
+    </div>
+
+    <!-- SESIÓN 2 -->
+    <div class="video-section">
+        <div id="vid_6782e7560f28aac6bc763eb5" style="position: relative; width: 100%; padding: 56.20608899297424% 0 0;"> <img id="thumb_6782e7560f28aac6bc763eb5" src="https://images.converteai.net/7ee76c7b-b701-481f-b973-2b478faae041/players/6782e7560f28aac6bc763eb5/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> <div id="backdrop_6782e7560f28aac6bc763eb5" style=" -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%; "></div> </div> <script type="text/javascript" id="scr_6782e7560f28aac6bc763eb5"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/7ee76c7b-b701-481f-b973-2b478faae041/players/6782e7560f28aac6bc763eb5/player.js", s.async=!0,document.head.appendChild(s); </script> <style> .elementor-element:has(#smartplayer) { width: 100%; } </style>
+    </div>
+
+    <!-- SESIÓN 3 -->
+    <div class="sound-notice">
+        <i class="bi bi-volume-up-fill"></i>
+        Asegúrate de que el sonido esté activado
+    </div>
+
+</body>
+</html>
